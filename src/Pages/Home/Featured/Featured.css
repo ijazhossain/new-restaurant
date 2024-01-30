@@ -1,0 +1,6 @@
+.feature-bg {
+  background-image: url("../../../assets/home/featured.jpg");
+  min-height: auto;
+  background-size: cover;
+  background-position: center;
+}
