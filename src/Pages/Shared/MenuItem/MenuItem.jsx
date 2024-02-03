@@ -12,11 +12,11 @@ const MenuItem = ({ item }) => {
         />
       </div>
       <div>
-        <h4>{name}-------------</h4>
+        <h4>{name} ------------------------</h4>
         <p>{recipe}</p>
       </div>
       <div>
-        <p>{price}</p>
+        <p className="text-[#BB8506]">{price}</p>
       </div>
     </div>
   );
