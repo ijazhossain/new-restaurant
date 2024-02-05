@@ -54,6 +54,9 @@ const Navbar = () => {
           <li>
             <Link to="/menu">MENU</Link>
           </li>
+          <li>
+            <Link to="/order/salad">ORDER</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
