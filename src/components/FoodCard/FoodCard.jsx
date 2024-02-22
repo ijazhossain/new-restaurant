@@ -1,6 +1,6 @@
 const FoodCard = ({ item }) => {
   const { _id, name, recipe, image, category, price } = item;
-  console.log({ _id, name, recipe, image, category });
+  // console.log({ _id, name, recipe, image, category });
   return (
     <div className="card  bg-base-100 shadow-xl">
       <figure>
