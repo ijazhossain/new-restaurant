@@ -62,7 +62,7 @@ const Login = () => {
       <div
         style={{
           backgroundImage: `url("${coverImg}")`,
-          height: "100%",
+          height: "100vh",
           backgroundSize: "cover",
         }}
       >
