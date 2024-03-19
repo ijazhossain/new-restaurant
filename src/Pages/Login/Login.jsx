@@ -10,8 +10,10 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 const Login = () => {
   const [isDisabled, setIsDisabled] = useState(true);
+  const [error, setError] = useState("");
   const captchaRef = useRef(null);
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -38,6 +40,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.log(error.message);
+        setError(error.message);
       });
   };
   const handleValidate = () => {
@@ -106,6 +109,7 @@ const Login = () => {
               >
                 validate
               </button>
+              <p className="text-red-500 text-xs mb-3">{error}</p>
               <input
                 className="w-full bg-[#D1A054] py-2 font-semibold text-white rounded-lg"
                 type="submit"
@@ -117,6 +121,7 @@ const Login = () => {
               <small>New here? </small>
               <Link to="/register">Create a new account</Link>
             </p>
+            <SocialLogin />
           </div>
         </div>
       </div>
