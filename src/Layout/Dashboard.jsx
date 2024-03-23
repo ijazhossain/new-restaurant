@@ -43,7 +43,7 @@ const Dashboard = () => {
               </NavLink>
 
               <NavLink
-                to="/dashboard/reservations"
+                to="/dashboard/addItems"
                 className="flex items-center p-2"
               >
                 <FaUtensils className="mr-2" />
@@ -51,7 +51,7 @@ const Dashboard = () => {
               </NavLink>
 
               <NavLink
-                to="/dashboard/history"
+                to="/dashboard/manageItems"
                 className="flex items-center p-2"
               >
                 <FaBars className="mr-2" />
